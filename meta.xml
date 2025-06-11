@@ -1,0 +1,31 @@
+<meta>
+    <info author="YourName" version="1.0" name="Professional Help System" description="نظام قائمة المساعدة الاحترافية مع DGS" />
+    
+    <!-- Client Side Files -->
+    <script src="client.lua" type="client" />
+    
+    <!-- Server Side Files -->
+    <script src="server.lua" type="server" />
+    
+    <!-- DGS Dependency -->
+    <include resource="dgs" />
+    
+    <!-- Export Functions -->
+    <export function="openHelpWindow" type="client" />
+    <export function="closeHelpWindow" type="client" />
+    
+    <!-- Settings -->
+    <settings>
+        <setting name="*server.location" value="السعودية" />
+        <setting name="*welcome_message" value="true" />
+        <setting name="*auto_tips" value="true" />
+        <setting name="*tip_interval" value="300" />
+    </settings>
+    
+    <!-- ACL Rights -->
+    <aclrequest>
+        <right name="function.banPlayer" access="false" />
+        <right name="function.kickPlayer" access="false" />
+        <right name="general.adminpanel" access="false" />
+    </aclrequest>
+</meta>
