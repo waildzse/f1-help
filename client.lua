@@ -1,8 +1,3 @@
--- ===========================================
--- نظام قائمة المساعدة الاحترافية - MTA RP
--- Client Side Script
--- ===========================================
-
 local screenW, screenH = guiGetScreenSize()
 local helpWindow = nil
 local helpWindowVisible = false
